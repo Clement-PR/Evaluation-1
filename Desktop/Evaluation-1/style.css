@@ -162,10 +162,30 @@ p {
 
 .trait-3 {
   height: 3px;
-  width: 15%;
+  width: 5%;
   background: black;
   margin: 0 auto;
 }
 
+.container-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
+.madagascar {
+  background: url(./media/paysage-madagascar.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  height: 334px;
+  width: 536px;
+}
+
+.maroc {
+  background: url(./media/paysage-maroc.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  height: 334px;
+  width: 536px;
+}
 
