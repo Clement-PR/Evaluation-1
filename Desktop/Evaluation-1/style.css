@@ -278,6 +278,10 @@ p {
   bottom: 100px;
 }
 
+.button-main:hover {
+  text-decoration: underline;
+}
+
 .titre-4 {
   margin-top: 3%;
   font-size: 2em;

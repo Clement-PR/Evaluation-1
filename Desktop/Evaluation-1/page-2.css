@@ -117,3 +117,65 @@ body {
   font-size: x-large;
 }
 
+/* ************************* MAIN CONTENT ********************* */
+
+.titre-1 {
+  margin-top: 5%;
+  font-size: 2em;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  padding: 50px;
+  letter-spacing: 2px;
+}
+
+.trait-2 {
+  height: 3px;
+  width: 3.5%;
+  background: black;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 200px;
+}
+
+.ocean {
+  background: url(./media-2/ocean.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  height: 334px;
+  width: 536px;
+}
+
+.alimentation {
+  background: url(./media-2/alimentation.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  height: 334px;
+  width: 536px;
+}
+
+.vie-sauvage {
+  background: url(./media-2/tigres.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  height: 334px;
+  width: 1103px;
+}
+
+.forets {
+  background: url(./media-2/foret.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  height: 334px;
+  width: 536px;
+}
+
+.climat {
+  background: url(./media-2/energie.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  height: 334px;
+  width: 536px;
+}
+
