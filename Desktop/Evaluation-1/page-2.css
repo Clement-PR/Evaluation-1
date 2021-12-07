@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Bebas Neue', cursive;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   overflow-x: hidden;
 }
 
@@ -27,10 +27,9 @@ body {
   transition: 0.2s ease-in-out;
 }
 
-.logo-nav:hover {
+.logo-nav:active {
   cursor: pointer;
   scale: 0.9;
-  filter: blur(0.5px);
   transition: 0.2s ease-in-out;
 }
 
@@ -42,15 +41,29 @@ body {
   top: 0.6em;
 }
 
-.a-nav {
+.a-nav-1 {
   text-decoration: none;
   font-family: 'Bebas Neue', cursive;
-  color: rgba(0, 0, 0, 0.678);
+  color: rgba(0, 0, 0, 0.712);
   font-size: 2em;
   transition: 0.2s ease-in-out;
 }
 
-.a-nav:hover {
+.a-nav-1:hover {
+  color: rgba(0, 0, 0, 0.712);
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.a-nav-2 {
+  text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
+  color: rgb(0, 0, 0);
+  font-size: 2em;
+  transition: 0.2s ease-in-out;
+}
+
+.a-nav-2:hover {
   color: black;
   text-decoration: none;
   transition: 0.2s ease-in-out;
@@ -70,7 +83,7 @@ body {
   letter-spacing: 1px;
 }
 
-.button-nav:hover {
+.button-nav:active {
   background: rgb(255, 94, 0);
   color: #fff;
   transition: 0.3s ease-in-out;
@@ -81,7 +94,7 @@ body {
 .bg-main {
   background: url(./media-2/bg-main-2.jpg) no-repeat fixed 50% 50%;
   background-size: cover;
-  height: 799px;
+  height: 808px;
   padding: 60px;
 }
 
@@ -141,7 +154,7 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 25px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .ocean {
@@ -149,6 +162,14 @@ body {
   background-size: cover;
   height: 334px;
   width: 536px;
+  transition: ease 0.5s all;
+}
+
+.ocean:hover {
+  transition: ease 0.5s all;
+  cursor: pointer;
+  opacity: 0.8;
+  scale: 1.01;
 }
 
 .alimentation {
@@ -156,6 +177,14 @@ body {
   background-size: cover;
   height: 334px;
   width: 536px;
+  transition: ease 0.5s all;
+}
+
+.alimentation:hover {
+  transition: ease 0.5s all;
+  cursor: pointer;
+  opacity: 0.8;
+  scale: 1.01;
 }
 
 .vie-sauvage {
@@ -163,6 +192,14 @@ body {
   background-size: cover;
   height: 334px;
   width: 1103px;
+  transition: ease 0.5s all;
+}
+
+.vie-sauvage:hover {
+  transition: ease 0.5s all;
+  cursor: pointer;
+  opacity: 0.8;
+  scale: 1.01;
 }
 
 .forets {
@@ -170,6 +207,14 @@ body {
   background-size: cover;
   height: 334px;
   width: 536px;
+  transition: ease 0.5s all;
+}
+
+.forets:hover {
+  transition: ease 0.5s all;
+  cursor: pointer;
+  opacity: 0.8;
+  scale: 1.01;
 }
 
 .climat {
@@ -177,5 +222,109 @@ body {
   background-size: cover;
   height: 334px;
   width: 536px;
+  transition: ease 0.5s all;
 }
+
+.climat:hover {
+  transition: ease 0.5s all;
+  cursor: pointer;
+  opacity: 0.8;
+  scale: 1.01;
+}
+
+.container p {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3.5em;
+  color: white;
+  text-shadow: 2px 2px 3px black ;
+  margin: auto;
+}
+
+.container-p {
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+
+/* ********************* FOOTER ****************** */
+
+.footer {
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+.background-footer {
+  background: url(./media/tiled_geo_dark.png);
+  padding: 60px 0 30px 0;
+  margin: 0;
+}
+
+hr {
+  background: white;
+  width: 50%;
+}
+
+.h3-footer {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 3px;
+}
+
+.logo-WWF-footer {
+  position: relative;
+  bottom: 20px;
+}
+
+/* ********************* ICONS FOOTER ************* */
+.icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 40px;
+}
+
+.icon-facebook, .icon-twitter, .icon-instagram, .icon-youtube, .icon-in {
+  transition: all ease 0.3s;
+}
+
+.icon-facebook:hover, .icon-twitter:hover, .icon-instagram:hover, .icon-youtube:hover, .icon-in:hover {
+  transition: all ease 0.3s;
+  scale: 1.3;
+}
+
+/* *********************** LIST LINK FOOTER ***************** */
+
+.list-info {
+  margin: 30px 0;
+}
+
+.list-info li {
+  list-style: none;
+  display: inline;
+}
+
+.list-info a {
+  transition: ease all 0.3s;
+  color: #fff;
+  letter-spacing: 0.5;
+  padding: 20px;
+}
+
+.list-info a:hover {
+  transition: ease all 0.3s;
+  color: rgb(167, 162, 162);
+  text-decoration: none;
+}
+
+/* ****************** COPYRIGHT *************** */
+
+.copyright {
+  margin-top: 50px;
+  color: rgba(255, 255, 255, 0.568);
+  font-size: 1.2em;
+
+}
+
 
