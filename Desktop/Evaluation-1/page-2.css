@@ -12,7 +12,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ***************** NAVBAR ************** */
+/* ************************** NAVBAR ******************** */
 
 .navbar {
   width: 100%;
@@ -89,7 +89,7 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-/***************************** BACKGROUND MAIN ************************/
+/* **************************** BACKGROUND MAIN *********************** */
 
 .bg-main {
   background: url(./media-2/bg-main-2.jpg) no-repeat fixed 50% 50%;
@@ -324,7 +324,267 @@ hr {
   margin-top: 50px;
   color: rgba(255, 255, 255, 0.568);
   font-size: 1.2em;
+}
 
+/* ******************* MEDIA QUERIES ************ */
+
+/* ********************* ICONS FOOTER ************* */
+.icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 40px;
+}
+
+.icon-facebook, .icon-twitter, .icon-instagram, .icon-youtube, .icon-in {
+  transition: all ease 0.3s;
+}
+
+.icon-facebook:hover, .icon-twitter:hover, .icon-instagram:hover, .icon-youtube:hover, .icon-in:hover {
+  transition: all ease 0.3s;
+  scale: 1.3;
+}
+
+/* *********************** LIST LINK FOOTER ***************** */
+
+.list-info {
+  margin: 30px 0;
+}
+
+.list-info li {
+  list-style: none;
+  display: inline;
+}
+
+.list-info a {
+  transition: ease all 0.3s;
+  color: #fff;
+  letter-spacing: 0.5;
+  padding: 20px;
+}
+
+.list-info a:hover {
+  transition: ease all 0.3s;
+  color: rgb(167, 162, 162);
+  text-decoration: none;
+}
+
+/* ****************** COPYRIGHT *************** */
+
+.copyright {
+  margin-top: 50px;
+  color: rgba(255, 255, 255, 0.568);
+  font-size: 1.2em;
+}
+
+/* ****************** MEDIA QUERIES ************** */
+
+/* ****************** BREAKPOINT ***************** */
+
+@media only screen 
+   and (max-width : 1364px) {
+   .li-nav {
+    right: 20em;
+    top: 0.6em;
+   }
+}
+
+@media only screen 
+   and (max-width : 1032px) {
+   .li-nav {
+    position: relative;
+    left: 0px;
+    font-size: 0.9em;
+   }
+   .text-place {
+     width: 600px;
+   }
+   .title-main {
+     font-size: 5em;
+     letter-spacing: 2.5px;
+   }
+   .trait {
+     height: 4px;
+     width: 130px;
+   }
+   .text-main {
+     font-size: 1.2em;
+   }
+   .navbar {
+     height: 120px;
+   }
+   .logo-nav-2 {
+    height: 95px;
+    width: auto;
+   }
+}
+
+@media only screen 
+   and (max-width : 440px) {
+    .li-nav {
+      font-size: 0.6em;
+      margin-left: 1em;
+    }
+}
+
+@media only screen 
+   and (max-width : 580px) {
+    .text-place {
+      position: absolute;
+      margin-top: 90px;
+      font-size: 0.8em;
+    }
+}
+
+@media only screen 
+   and (max-width : 496px) {
+    .text-place {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      top: 150px;
+      left: -65px;
+    }
+}
+
+/* ******************* LAPTOP ********************* */
+
+@media only screen 
+   and (max-width : 1200px) {
+    .li-nav {
+      right: 15em;
+      top: 0.6em;
+    }
 }
 
 
+/* ******************* TABLET ********************** */
+
+@media only screen 
+   and (max-width : 768px) {
+   .button-nav {
+     display: none;
+   }
+   .navbar {
+     height: 110px;
+   }
+   .logo-nav-2 {
+     height: 80px;
+     width: auto;
+   }
+   .li-nav {
+     font-size: 0.7em;
+   }
+   .text-place {
+    width: 450px;
+  }
+  .title-main {
+    font-size: 3.5em;
+    letter-spacing: 2px;
+  }
+  .trait {
+    height: 3.5px;
+    width: 115px;
+  }
+  .text-main {
+    font-size: 1.5em;
+  }
+  .ocean p {
+    font-size: 2.8em;
+  }
+  .alimentation p {
+    font-size: 2.8em;
+    top: 100px;
+  }
+  .vie-sauvage p {
+    font-size: 2.8em;
+  }
+  .forets p{
+    font-size: 2.8em;
+  }
+  .climat p {
+    font-size: 2.65em;
+  }
+  .logo-WWF-footer-2 {
+    height: 90px;
+    width: auto;
+  }
+  .list-icons {
+    height: 25px;
+    width: auto;
+  }
+  .list-icons {
+    margin: 20px 0;
+  }
+  .list-info {
+    margin: 3px 0;
+  }
+  .list-info li {
+    display: block;
+    font-size: 0.9em;
+    padding: 3px;
+    text-align: center;
+    position: relative;
+    right: 20px;
+  }
+  .copyright {
+    font-size: 1em;
+  }
+}
+
+
+/* ****************** SMART PHONE ******************* */
+
+@media only screen 
+  and (max-width : 320px) {
+    .text-place {
+      display: inline;
+      font-size: 10px;
+      position: relative;
+      left: -40px;
+    }
+    .li-nav {
+      font-size: 0.49em;
+    }
+    .logo-nav-2 {
+      height: 60px;
+      width: auto;
+    }
+    .navbar {
+      height: 90px;
+    }
+    .madagascar p {
+      font-size: 2em;
+      top: 120px;
+    }
+    .ocean p {
+      font-size: 2em;
+    }
+    .alimentation p {
+      font-size: 2em;
+      top: 100px;
+    }
+    .vie-sauvage p {
+      font-size: 2em;
+    }
+    .forets p{
+      font-size: 2em;
+    }
+    .climat p {
+      font-size: 2em;
+    }
+    .logo-WWF-footer-2 {
+      height: 80px;
+      width: auto;
+    }
+    .list-icons {
+      height: 20px;
+      width: auto;
+    }
+}
+
+
+/* ************************ END ******************** */

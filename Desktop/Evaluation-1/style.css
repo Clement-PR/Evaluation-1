@@ -12,7 +12,7 @@ body {
   overflow-x: hidden;
 }
 
-/****************** NAVBAR ***************/
+/* ******************** NAVBAR ****************** */
 
 .navbar {
   width: 100%;
@@ -89,7 +89,7 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-/***************************** BACKGROUND MAIN ************************/
+/* **************************** BACKGROUND MAIN *********************** */
 
 .bg-main {
   background: url(./media/bg-main.jpg) no-repeat fixed 50% 50%;
@@ -415,6 +415,7 @@ hr {
 }
 
 /* ********************* ICONS FOOTER ************* */
+
 .icons {
   display: flex;
   flex-direction: row;
@@ -463,10 +464,240 @@ hr {
   margin-top: 50px;
   color: rgba(255, 255, 255, 0.568);
   font-size: 1.2em;
+}
 
+/* ****************** MEDIA QUERIES ************** */
+
+/* ****************** BREAKPOINT ***************** */
+
+@media only screen 
+   and (max-width : 1364px) {
+   .li-nav {
+    right: 20em;
+    top: 0.6em;
+   }
+}
+
+@media only screen 
+   and (max-width : 1032px) {
+   .li-nav {
+    position: relative;
+    left: 0px;
+    font-size: 0.9em;
+   }
+   .text-place {
+     width: 600px;
+   }
+   .title-main {
+     font-size: 5em;
+     letter-spacing: 2.5px;
+   }
+   .trait {
+     height: 4px;
+     width: 130px;
+   }
+   .text-main {
+     font-size: 1.2em;
+   }
+   .navbar {
+     height: 120px;
+   }
+   .logo-nav-2 {
+    height: 95px;
+    width: auto;
+   }
+}
+
+@media only screen 
+   and (max-width : 440px) {
+    .li-nav {
+      font-size: 0.6em;
+      margin-left: 1em;
+    }
+}
+
+@media only screen 
+   and (max-width : 580px) {
+    .text-place {
+      position: absolute;
+      margin-top: 90px;
+      font-size: 0.8em;
+    }
+}
+
+@media only screen 
+   and (max-width : 496px) {
+    .text-place {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      top: 150px;
+      left: -65px;
+    }
+}
+
+@media only screen 
+   and (max-width : 441px) {
+    .madagascar p {
+      font-size: 2.1em;
+    }
+    .maroc p {
+      font-size: 1.9em;
+      bottom: 110px;
+    }
+    .p-raison-etre {
+      font-size: 0.8em;
+    }
+}
+
+/* ******************* LAPTOP ********************* */
+
+@media only screen 
+   and (max-width : 1200px) {
+    .li-nav {
+      right: 15em;
+      top: 0.6em;
+    }
 }
 
 
+/* ******************* TABLET ********************** */
+
+@media only screen 
+   and (max-width : 768px) {
+   .button-nav {
+     display: none;
+   }
+   .navbar {
+     height: 110px;
+   }
+   .logo-nav-2 {
+     height: 80px;
+     width: auto;
+   }
+   .li-nav {
+     font-size: 0.7em;
+   }
+   .text-place {
+    width: 450px;
+  }
+  .title-main {
+    font-size: 3.5em;
+    letter-spacing: 2px;
+  }
+  .trait {
+    height: 3.5px;
+    width: 115px;
+  }
+  .text-main {
+    font-size: 1.5em;
+  }
+  .madagascar p {
+    font-size: 2.9em;
+  }
+  .maroc p {
+    font-size: 2.65em;
+    top: 100px;
+  }
+  .p-raison-etre p {
+    font-size: 2em;
+  }
+  .button-main {
+    padding: 5px 13px;
+    font-size: 1.1em;
+  }
+  .don p {
+    font-size: 2.9em;
+    margin-top: 30%;
+  }
+  .engager p {
+    font-size: 2.9em;
+    margin-top: 30%;
+  }
+  .logo-WWF-footer-2 {
+    height: 90px;
+    width: auto;
+  }
+  .list-icons {
+    height: 25px;
+    width: auto;
+  }
+  .list-icons {
+    margin: 20px 0;
+  }
+  .list-info {
+    margin: 3px 0;
+  }
+  .list-info li {
+    display: block;
+    font-size: 0.9em;
+    padding: 3px;
+    text-align: center;
+    position: relative;
+    right: 20px;
+  }
+  .copyright {
+    font-size: 1em;
+  }
+}
+
+
+/* ****************** SMART PHONE ******************* */
+
+@media only screen 
+  and (max-width : 320px) {
+    .text-place {
+      display: inline;
+      font-size: 10px;
+      position: relative;
+      left: -40px;
+    }
+    .li-nav {
+      font-size: 0.49em;
+    }
+    .logo-nav-2 {
+      height: 60px;
+      width: auto;
+    }
+    .navbar {
+      height: 90px;
+    }
+    .madagascar p {
+      font-size: 2em;
+      top: 120px;
+    }
+    .maroc p {
+      font-size: 2em;
+      top: 100px;
+    }
+    .p-raison-etre p {
+      font-size: 1.4em;
+    }
+    .button-main {
+      padding: 5px 13px;
+      font-size: 1em;
+    }
+    .don p {
+      font-size: 2em;
+      margin-top: 130px;
+    }
+    .engager p {
+      font-size: 2em;
+      margin-top: 130px;
+    }
+    .logo-WWF-footer-2 {
+      height: 80px;
+      width: auto;
+    }
+    .list-icons {
+      height: 20px;
+      width: auto;
+    }
+}
+
+
+/* ************************ END ******************** */
 
 
 
